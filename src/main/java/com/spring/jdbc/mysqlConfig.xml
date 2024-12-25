@@ -34,6 +34,9 @@
 		<property name="password" value="root" />
 
 	</bean>
+	
+	<bean class="org.springframework.jdbc.core.JdbcTemplate"
+		id="jdbcTemplate" p:dataSource-ref="ds" />
 
 	<bean class="org.springframework.jdbc.core.JdbcTemplate"
 		id="jdbcTemplate" p:dataSource-ref="pgds" />
